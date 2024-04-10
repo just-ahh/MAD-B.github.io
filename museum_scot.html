@@ -1,107 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
 
-	<title>Homepage</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
-	<script type="text/javascript" src="script.js"></script>
+		<title>National Museum of Scotland</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">		
+		
+		<link rel="stylesheet" href="styles.css">
+		<script type="text/javascript" src="script.js"></script>
 
-</head>
+	</head>
 
-<body>
-<header>
-  	<div class="menu">
-	<ul>
-	<li><a href="index.html"> Home </a></li>	
-	<li><a href="why.html"> Why </a></li>
-	<div id="on-page">		
-	<li><a href="examples.html"> Examples </a></li>
-	</div>	
-	</ul>
-	</div>
-
-</header>
-<br>		
-<div class="heading"> 
-		<h1>National Museum of Scotland</h1>	
+	<body>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	
+	<header>
+		<div class="menu">
+		<ul>
+		<li><a href="index.html"> Home </a></li>	
+		<li><a href="why.html"> Why </a></li>	
+		<li><a href="examples.html" class="on-page"> Examples </a></li>
+		</ul>
 		</div>
 
-<div class="content">
-		<div class="slideshow">
-			<div class="slideshow-container fade">
-				
-				
-					<div class="mySlides">
-						<div class="numbertext">1 / 3</div>
-						<img src="../Images/edi1.png" style="width:75%">
-						<div class="text">Inside the Museum gallery</div>
-					</div>
-
-					<div class="mySlides">
-						<div class="numbertext">2 / 3</div>
-						<img src="../Images/edi2.png" style="width:75%">
-						<div class="text">Accessible tower entrance</div>
-					</div>
-
-					<div class="mySlides">
-						<div class="numbertext">3 / 3</div>
-						<img src="../Images/edi3.jfif" style="width:75%">
-						<div class="text">The Main Entrance</div>
-					</div>
-  
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				
-  
-  
-				</div>
-
-				<div style="text-align:center">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-				</div>
-				
-		</div>		
-
-					<div class="flex-container">				
-			<div class ="flex-item">
-			
-				<h3> Review </h3>
-				
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</p>
-				<ul>
-				<li>Lorem ipsum</li>
-				<li> Dolor sit amet</li>
-				<li> consectetur adipiscing elit.</li>
-				</ul>
-
-			
-				
+	</header>
+	<br>		
+	<div class="heading"> 
+			<h1>National Museum of Scotland</h1>	
 			</div>
-			<div class="flex-item">
-				<h3> Key Information </h3>
-				<ul>
-				<li>Free Entry.</li>
-				<li> Open 10am - 5pm daily <br> *Holidays may differ.</li>
-				<li> 10 minute walk from Edinburgh Waverley train station. </li>
-				<li> No offical parking area but other local places are available to park a few mins walk away.</li>
-				</ul>
-		</div>
-		</div>
-		
-		
+			
 
+<div class="flexbox-container">
+	<div id="info"> 
+		<h3> Key Information </h3>
+		<ul>
+			<li>Free Entry.</li>
+			<li> Open 10am - 5pm daily <br> *Holidays may differ.</li>
+			<li> 10 minute walk from Edinburgh Waverley train station. </li>
+			<li> No offical parking area but other local places are available to park a few mins walk away.</li>
+		</ul>
+	</div>
+</div>
+	
+	<div class="flexbox-container">
+	<div id="review"> <h3> Racing Game </h3>
+<p> 2 Players race against each other to complete as many laps within a time limit.<br> <br>
+	The players are on a fixed track and must utilise acceleration and breaking to  get round each corner, along with a turbo speed to go as quick as possible.<br> <br>
+	Whilst learning about physics and utilising pit stops to maintain both the car and speed.
+</p>
+
+	</div>
+	<div id="review_img"> <img src="../Images/edi_race.png" alt="Image of the museum of Scotland racing game."> </img></div>
+	</div>
+	
+	<div class="flexbox-container">
+	<div id="review"> <h3> Genetic Engineering Lab </h3>
+<p>	The player is given different genetic engineering examples of what different animal genes have been tested together. <br> <br>
+	By looking at what each options the player has to guess which combinations worked.<br> <br>
+	After each guess, there is extra information about why each combination worked/failed. 
+</p>
+	</div>
+	<div id="review_img"> <img src="../Images/edi_gene.png" alt="Image of the museum of Scotland genetic engineering game."> </img></div>
+	</div>
+	<div class="flexbox-container">
+	<div id="review"> <h3> Make the Best Fit </h3>
+<p>Within this game, players must place all the different sized shapes within the area with as little wasted space as possible. <br> <br>
+	To make the game more challenging there is a time limit for each level with several difficulty levels to choose from, ranging from easy to master. <br> <br> 
+	Each attempt gives the player a percentage score about how much area was used so they can improve on their technique and speed.
+</p>
+	</div>
+	<div id="review_img"> <img src="../Images/edi_fit_width.png" alt="Image of the museum of Scotland make the best fit game."> </img></div>
+	</div>
+	
+	<div class="flexbox-container">
+	<h3> Trip Advisor Reviews </h3>
+	</div>	
+	<div class="flexbox-container-1">
+	
+	<div id="other_review">
+		 <img src="../Images/edi_trip3.png" alt="A trip advisor review by Lyall D states that they hadn't been in a while and lost of interactive displays. Lots to do for children, teenagers and adults. Far too much to see in one visit but would come back woth a planned route. Rated 4/5"> </img>
+	</div>		
+
+	<div id="other_review">
+		 <img src="../Images/edi_trip2.png" alt="A trip advisor review by Heather H states that the place is amazing and free with welcomed donations. Lots of interactive exhibits for children and adults. Could visit miltiple times due to amount to see. Reasonably priced food and perfect for a rainy day. Rated 4/5"> </img>
+	</div>	
+	
+	<div id="other_review">
+		 <img src="../Images/edi_trip1.png" alt="A trip advisor review by Lanthe states they loved the amount of collections within the museum. Says the Science and technology section is great for both kids, teens and adults intrested in STEM, and thought it was displayed well for a wide audience. Said they didn't manage to see everything due to overwhelm but are happy to see morning sessions with reduced sensory stimuli. Rated 5/5"> </img>
+	</div>
+</div>
+
+	</div>
 	<br>
 	<footer>
-	<p>Student Number: 2660039<br>
-	Submitted in fulfilment of MAD(B)</p>
+		<p>Student Number: 2660039<br>
+		Submitted in fulfilment of MAD(B)</p>
 	</footer>
+</div>
 
-</body>
-</html>
+	</body>
+	</html>
+	

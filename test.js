@@ -7,7 +7,7 @@ function scrollFunction() {
 {
 	mybutton.style.display = "block";
 	} else {
-	mybutton.style.display = "none";
+		mybuttoon.style.display = "none";
 	}
 }
 
